@@ -1,0 +1,17 @@
+version: '3'
+services:
+  rails-api:
+    build: .
+    container_name: rails-api
+    volumes:
+      - .:/rails-api
+    ports:
+      - "3000:3000"
+    networks:
+      - networks
+
+volumes:
+  rails:
+networks:
+  networks:
+    driver: bridge
