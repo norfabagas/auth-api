@@ -11,6 +11,8 @@ WORKDIR /rails-api
 COPY Gemfile /rails-api/Gemfile
 COPY Gemfile /rails-api/Gemfile.lock
 
+RUN gem install bundler:2.1.4
+
 RUN bundle install
 
 COPY . /rails-api

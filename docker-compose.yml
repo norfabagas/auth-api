@@ -9,9 +9,7 @@ services:
       - "3000:3000"
     networks:
       - networks
-
-volumes:
-  rails:
+      
 networks:
   networks:
     driver: bridge
